@@ -1,0 +1,15 @@
+extends layout
+
+
+block content
+  .content
+    .content-header
+        .content-header__title Авторизация
+        .error #{msg}
+    .content__body
+          form(method='post' action='/login')
+            label(for='login') Логин
+            input#login(name='login' value='' required)
+            label(for='pass') Пароль
+            input#pass(name='pass' type='password' required)
+            button(type='submit') Войти

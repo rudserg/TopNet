@@ -1,0 +1,22 @@
+{
+  "name": "node-blog",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "bootable": "*",
+    "bootable-environment": "*",
+    "winston-wrapper": "*",
+    "nconf": "*",
+    "mysql": "*",
+    "up-express-logger": "*",
+    "require-tree": "*",
+    "stylus": "*",
+    "connect-stylus": "*",
+    "markdown": "~0.5.0",
+    "nib": "~1.0.1"
+  }
+}

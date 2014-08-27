@@ -1,0 +1,8 @@
+.topbar
+  - if (user)
+    span
+    a(href='/profile') Привет, #{user.name}!
+    span |
+    a(href='/logout') Выйти
+  - else
+    a(href='/login') Войти

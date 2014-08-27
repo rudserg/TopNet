@@ -1,0 +1,17 @@
+extends layout
+
+
+block content
+  .content
+    .content-header
+        .content-header__title Профиль
+        .error #{msg}
+    .content__body
+          form(method='post' action='/profile')
+            label(for='login') Логин
+            input#login(name='login' value='' required)
+            label(for='pass') Пароль
+            input#pass(name='pass' type='password' required)
+            label(for='pass') Пароль еще раз
+            input#pass(name='pass2' type='password' required)
+            button(type='submit') Сохранить
